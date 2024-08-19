@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/back-2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 850px;
+  margin: 20px;
+  background-image: url('./images/back-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.loading {
+  font-size: 1.2em;
+  color: #000;
+  margin-top: 10px;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.heading {
+  font-size: 2.5em;
+  color: rgb(14, 223, 255); /* Change to yellow */
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the map */
+}
+
+.upload-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#loadfile {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f3ef04;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+label:hover {
+  background-color: #eb0712f4;
+}
+
+.textbox {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 0.5em 1em;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+button.edit-mode {
+  background-color: lightgreen;
+  border: 2px solid green;
+}
+
+button.view-mode {
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+
+button.save-mode {
+  background-color: lightcoral;
+  border: 2px solid red;
+}
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content h2 {
+  margin: 0 0 10px 0;
+}
+
+.popup-content button {
+  margin: 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+
